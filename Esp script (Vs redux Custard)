@@ -1,0 +1,17 @@
+-- loadstring
+local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Iker7747/Esp/refs/heads/main/Esp%20module"))()
+ 
+-- config
+ESP.Players = true
+ESP.Boxes = true
+ESP.Names = true
+ESP:Toggle(true)
+ 
+-- object
+ESP:AddObjectListener(Workspace.Rake, { -- Object Path, For example: Workspace.ThisFolder
+    Name = "HumanoidRootPart", --Object name inside of the path, for example: Workspace.ThisFolder.Item_1
+    CustomName = "Custard", -- Name you want to be displayed
+    Color = Color3.fromRGB(255, 0, 0), -- Color
+    IsEnabled = "Custard" -- Any name, has to be the same as the last line: ESP.TheNameYouWant
+})
+ESP.Custard = true
